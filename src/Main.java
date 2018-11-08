@@ -15,7 +15,7 @@ public class Main {
         Scanner sc = new Scanner (System.in);
         int numHoteles = sc.nextInt ();
 
-//NOMBRE
+//NOMBREs
 
         for (int i=0;i<numHoteles;i++){
             sc.nextLine();
@@ -24,14 +24,14 @@ public class Main {
             hotelCheck.setNombre(nombreHotel);
             hotelNombre.add(i, hotelCheck.getNombre());
 
-//PRECIO
+//PRECIOs
 
             System.out.println("Introduzca el precio del hotel número " +"#"+ (i+1) + ".");
             int precioHotel = sc.nextInt ();
             hotelCheck.setPrecio(precioHotel);
             hotelPrecio.add(i, hotelCheck.getPrecio());
 
-//PISCINA
+//PISCINAs
 
             System.out.println("¿Tiene el hotel número " +"#"+ (i+1) + " piscina?");
             System.out.println("Escriba 's' para sí o 'n' para no.");
@@ -50,7 +50,7 @@ public class Main {
                     System.out.println("Es necesario escribir 'n' o 's'.");
                 }
             }
-//WIFI
+//WIFIs
             System.out.println("¿Tiene el hotel número " + "#" + (i + 1) + " wifi?");
             System.out.println("Escriba 's' para sí o 'n' para no.");
             while (true) {
@@ -69,7 +69,7 @@ public class Main {
                         }
                     }
 
-//PARKING
+//PARKINGs
 
             System.out.println("¿Tiene el hotel número " +"#"+ (i+1) + " parking?");
             System.out.println("Escriba 's' para sí o 'n' para no.");

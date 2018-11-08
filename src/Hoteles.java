@@ -1,5 +1,5 @@
 public class Hoteles {
-
+//svsd
     private String nombre;
     private int precio;
     private boolean piscina;
