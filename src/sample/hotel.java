@@ -1,9 +1,15 @@
+package sample;
+
 public class hotel {
     private String nombre;
     private int precio;
     private boolean piscina;
     private boolean wifi;
     private boolean parking;
+
+    hotel (String nombre){
+
+    }
 
 
     public void setNombre(String nombre) {
