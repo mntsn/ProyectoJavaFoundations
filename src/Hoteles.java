@@ -1,5 +1,5 @@
 public class Hoteles {
-//svsd
+
     private String nombre;
     private int precio;
     private boolean piscina;
@@ -10,25 +10,18 @@ public class Hoteles {
         return nombre;
     }
     public void setNombre(String nombreHotel) {
-        if (nombreHotel==null||nombreHotel.isEmpty()){
-            System.out.println("El nombre no puede estar vacio.");
-        }
-        else {
             nombre = nombreHotel;
         }
-    }
+
 
     public int getPrecio() {
         return precio;
     }
     public void setPrecio(int precioHotel) {
-        if (precioHotel<0){
-            System.out.println("El precio debe ser positivo.");
-        }
-        else {
+
             precio = precioHotel;
         }
-    }
+
 
     public boolean isPiscina() {
         return piscina;
