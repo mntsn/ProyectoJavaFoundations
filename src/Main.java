@@ -10,7 +10,7 @@ public class Main {
         ArrayList<Boolean> hotelPiscina = new ArrayList<>();
         ArrayList<Boolean> hotelWifi = new ArrayList<>();
         ArrayList<Boolean> hotelParking = new ArrayList<>();
-        ArrayList<Integer> hotelEstrellas = new ArrayList<>();
+        ArrayList<String> hotelEstrellas = new ArrayList<>();
 
         System.out.println("Cuantos hoteles quiere comparar?");
         Scanner sc = new Scanner(System.in);
@@ -47,8 +47,8 @@ public class Main {
             }
 //PISCINAS
 
-            System.out.println("¿Tiene el hotel número " + "#" + (i + 1) + " piscina?");
-            System.out.println("Escriba 's' para sí o 'n' para no.");
+            System.out.print("¿Tiene el hotel número " + "#" + (i + 1) + " piscina?");
+            System.out.println(" Escriba 's' para sí o 'n' para no.");
             while (true) {
                 String piscinaHotel = sc.next();
                 if (piscinaHotel.equals("s")) {
@@ -65,8 +65,8 @@ public class Main {
                 }
             }
 //WIFIS
-            System.out.println("¿Tiene el hotel número " + "#" + (i + 1) + " wifi?");
-            System.out.println("Escriba 's' para sí o 'n' para no.");
+            System.out.print("¿Tiene el hotel número " + "#" + (i + 1) + " wifi?");
+            System.out.println(" Escriba 's' para sí o 'n' para no.");
             while (true) {
                 String wifiHotel = sc.next();
                 if (wifiHotel.equals("s")) {
@@ -85,8 +85,8 @@ public class Main {
 
 //PARKINGS
 
-            System.out.println("¿Tiene el hotel número " + "#" + (i + 1) + " parking?");
-            System.out.println("Escriba 's' para sí o 'n' para no.");
+            System.out.print("¿Tiene el hotel número " + "#" + (i + 1) + " parking?");
+            System.out.println(" Escriba 's' para sí o 'n' para no.");
             while (true) {
                 String parkingHotel = sc.next();
                 if (parkingHotel.equals("s")) {
@@ -112,13 +112,13 @@ public class Main {
         }
             //RESUMEN
             System.out.println("Resumen de los hoteles:");
-            System.out.println("Nombre" + " " + "Precio" + " " + "Piscina" + " " + "Wifi" + " " + "Parking");
+            System.out.println("Nombre" + "\t" + "Precio" + "\t" + "Piscina" + "\t" + "Wifi" + "\t" + "Parking");
             for (int j = 0; j < numHoteles; j++) {
-                System.out.println(hotelNombre.get(j) + " " +
-                        hotelPrecio.get(j) + " " +
-                        hotelPiscina.get(j) + " " +
-                        hotelWifi.get(j) + " " +
-                        hotelParking.get(j) + " " +
+                System.out.println(hotelNombre.get(j) + "\t" +
+                        hotelPrecio.get(j) + "\t" +
+                        hotelPiscina.get(j) + "\t" +
+                        hotelWifi.get(j) + "\t" +
+                        hotelParking.get(j) + "\t" +
                         hotelEstrellas.get(j));
             }
 
